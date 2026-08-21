@@ -43,24 +43,8 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
 
     return (
         <div className="layout-topbar">
-            <Link href="/" className="layout-topbar-logo flex items-center gap-2  ">
-                {/* <div
-                    style={{
-                        backgroundColor: layoutConfig.colorScheme === 'dark' ? '#79B6E8' : '#6366f1',
-                        color: layoutConfig.colorScheme === 'dark' ? '#ffffff' : '#ffffff',
-                        width: '48px',
-                        height: '48px',
-                        borderRadius: '12px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        transition: 'all 0.3s ease'
-                    }}
-                >
-                    <span style={{ fontWeight: 600, fontSize: '16px' }}>Mm</span>
-                </div>   */}
-            
-                <Image src="/logo-main.png" alt="Bprolive Dashboard" width={180} height={100} priority />
+             <Link href="/" className="layout-topbar-logo flex items-center">
+                <Image src="/logo-main-removebg-preview.png" alt="ExchangeMatic" width={220} height={99} priority className="w-[220px] h-auto object-contain" />
             </Link>
 
             <button ref={menubuttonRef} type="button" className="p-link layout-menu-button layout-topbar-button" onClick={onMenuToggle}>
