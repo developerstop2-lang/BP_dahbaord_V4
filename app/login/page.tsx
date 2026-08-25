@@ -76,7 +76,6 @@ const LoginPage = () => {
                             <div className="text-900 text-3xl font-medium mb-3">Welcome Back!</div>
                             <span className="text-600 font-medium">Sign in to continue</span>
                         </div>
-
                         <div>
                             <label htmlFor="email1" className="block text-900 text-xl font-medium mb-2">
                                 Email
