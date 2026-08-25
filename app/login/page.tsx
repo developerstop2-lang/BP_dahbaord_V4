@@ -123,7 +123,6 @@ const LoginPage = () => {
                                     Forgot password?
                                 </a>
                             </div>
-
                             {error && <p className="text-red-500 mb-3">{error}</p>}
 
                             <Button
