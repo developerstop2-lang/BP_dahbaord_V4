@@ -132,11 +132,11 @@ const LoginPage = () => {
                                 onClick={handleLogin}
                                 disabled={loading}
                             />
-                            <div className="text-center mt-3">
+                            {/* <div className="text-center mt-3">
                                 <Link href="singup" className="text-blue-500 font-medium">
                                     Don’t have an account? Sign Up
                                 </Link> 
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

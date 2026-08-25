@@ -44,7 +44,7 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
     return (
         <div className="layout-topbar">
              <Link href="/" className="layout-topbar-logo flex items-center">
-                <Image src="/logo-main-removebg-preview.png" alt="ExchangeMatic" width={220} height={99} priority className="w-[220px] h-auto object-contain" />
+                <Image src="/logo-main-removebg.png" alt="ExchangeMatic" width={220} height={99} priority className="w-[220px] h-auto object-contain" />
             </Link>
 
             <button ref={menubuttonRef} type="button" className="p-link layout-menu-button layout-topbar-button" onClick={onMenuToggle}>

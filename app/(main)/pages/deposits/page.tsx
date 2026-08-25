@@ -163,7 +163,7 @@ const Deposits = () => {
         const isApprovalPending = rowData.status === 'pending';
         return (
             <div className="flex gap-2">
-                <Button label="Approve" icon="pi pi-check" className="p-button-rounded p-button-success p-button-sm" onClick={() => handleApprove(rowData)} disabled={!isApprovalPending} />
+                <Button label="Approve" icon="pi pi-check" className="p-button-rounded  p-button-sm" onClick={() => handleApprove(rowData)} disabled={!isApprovalPending}   style={ { backgroundColor: "#132242", border: "none" } }/>
                 <Button label="Reject" icon="pi pi-times" className="p-button-rounded p-button-danger p-button-sm" onClick={() => handleReject(rowData)} disabled={!isApprovalPending} />
             </div>
         );

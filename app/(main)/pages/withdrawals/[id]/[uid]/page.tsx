@@ -298,7 +298,7 @@ const WithdrawalDetailsPage = ({
             </div>
 
             <div className="flex justify-center mt-4">
-                <Button label="Update Order" loading={loading} onClick={handleSubmit} />
+                <Button label="Update Order" loading={loading} onClick={handleSubmit} style={ { backgroundColor: "#132242", border: "none" } } />
             </div>
         </div>
     );
