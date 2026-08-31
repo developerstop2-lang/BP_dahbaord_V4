@@ -13,7 +13,6 @@ import Link from 'next/link';
 
 const LoginPage = () => {
     const router = useRouter();
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [checked, setChecked] = useState(false);
