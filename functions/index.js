@@ -17,7 +17,7 @@ const logger = require('firebase-functions/logger');
 setGlobalOptions({ maxInstances: 10 });
 
 // 1. Monitor Deposits Path for Auto-Deletion
-exports.deleteDepositOnStatusChange = onValueUpdated('/deposits/{userId}/{depositId}', async (event) => {
+exports.deleteDepositOnStatusChangev4 = onValueUpdated('/deposits/{userId}/{depositId}', async (event) => {
     // If the data does not exist (already deleted), exit to stop infinite loops
     if (!event.data.after.exists()) return null;
 
@@ -37,7 +37,7 @@ exports.deleteDepositOnStatusChange = onValueUpdated('/deposits/{userId}/{deposi
 });
 
 // 2. Monitor Withdrawals Path for Auto-Deletion
-exports.deleteWithdrawalOnStatusChange = onValueUpdated('/withdrawals/{userId}/{withdrawalId}', async (event) => {
+exports.deleteWithdrawalOnStatusChangev4 = onValueUpdated('/withdrawals/{userId}/{withdrawalId}', async (event) => {
     // If the data does not exist (already deleted), exit to stop infinite loops
     if (!event.data.after.exists()) return null;
 
@@ -56,7 +56,7 @@ exports.deleteWithdrawalOnStatusChange = onValueUpdated('/withdrawals/{userId}/{
     return null;
 });
 
-exports.deleteWithdrawalFlatOnStatusChange = onValueUpdated('/withdrawalsFlat/{withdrawalId}', async (event) => {
+exports.deleteWithdrawalFlatOnStatusChangev4 = onValueUpdated('/withdrawalsFlat/{withdrawalId}', async (event) => {
     if (!event.data.after.exists()) return null;
 
     const current = event.data.after.val();
@@ -75,7 +75,7 @@ exports.deleteWithdrawalFlatOnStatusChange = onValueUpdated('/withdrawalsFlat/{w
     return null;
 });
 
-exports.deleteDepositFlatOnStatusChange = onValueUpdated('/depositsFlat/{depositId}', async (event) => {
+exports.deleteDepositFlatOnStatusChangev4 = onValueUpdated('/depositsFlat/{depositId}', async (event) => {
     if (!event.data.after.exists()) return null;
 
     const current = event.data.after.val();
